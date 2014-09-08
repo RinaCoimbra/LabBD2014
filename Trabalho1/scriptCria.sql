@@ -114,16 +114,16 @@ CREATE TABLE edicao(
  *		um autor(1) ou não(0).
  */
 CREATE TABLE pessoa(
-	idPe number(15),						-- Chave Primária
+	idPe number(15),							-- Chave Primária
 	nomePe varchar2(60) NOT NULL,
-	emailPe varchar2(60),					-- Unique
+	emailPe varchar2(60),						-- Unique
 	instituicaoPe varchar2(40),
 	telefonePe varchar2(20),
 	nacionalidadePe varchar2(20) NOT NULL,
-	enderecoPe varchar2(200),				-- Nao obrigatório
-	tipoOrganizador number(1) NOT NULL,		-- (0-Não, 1-Sim)
-	tipoParticipante number(1) NOT NULL,	-- (0-Não, 1-Sim)
-	tipoAutor number(1) NOT NULL,			-- (0-Não, 1-Sim)
+	enderecoPe varchar2(200),					-- Nao obrigatório
+	tipoOrganizador number(1) NOT NULL,			-- (0-Não, 1-Sim)
+	tipoParticipante number(1) NOT NULL,		-- (0-Não, 1-Sim)
+	tipoAutor number(1) NOT NULL,				-- (0-Não, 1-Sim)
 	CONSTRAINT PK_PESSOA primary key(idPe),
 	CONSTRAINT UN_PESSOA unique(emailPe),
 	CONSTRAINT CHECK_PESSOA_ORG CHECK(tipoOrganizador IN (0,1)),
