@@ -32,43 +32,91 @@ DROP SEQUENCE SEQ_idArt;
 DROP SEQUENCE SEQ_codDesp;
 /
 -- COMANDO DE CRIAÇÃO DA TABELA EVENTO:
+/*
+ *	Esta tabela contém todos os dados de um evento. São eles:
+ *	codEv: um id único que identifica cada evento. É a chave primária.
+ *	nomeEv: nome que identifica o evento. Cada evento tem um nome único.
+ *	descriçaoEv: Um texto que descreve um evento. Essa descrição é opcional.
+ *	websiteEv: o website contendo as informações sobre o evento.
+ *	totalArtigosApresentadosEv: quantidade total de artigos ja apresentados
+ *		em todas as edições do evento.
+ */
 CREATE TABLE evento(
-	codEv number(15),
-	nomeEv varchar2(50),
-	descricaoEV varchar2(1024),
-	websiteEV varchar2(60) NOT NULL,
-	totalArtigosApresentadosEv number(3) NOT NULL,
+	codEv number(15),								-- Chave Primária
+	nomeEv varchar2(50),							-- Unique
+	descricaoEv varchar2(1024),
+	websiteEv varchar2(60) NOT NULL,
+	totalArtigosApresentadosEv number(3) NOT NULL,	-- Atributo derivado, armazena total de artigos em todas as edições de um evento
 	CONSTRAINT PK_EVENTO primary key(codEv),
 	CONSTRAINT UN_EVENTO unique(nomeEv)
 );
 /
--- COMANDO DE CRIAÇÃO DA TABELA EVENTO:
+-- COMANDO DE CRIAÇÃO DA TABELA EDICAO:
+/*
+ *	Esta tabela contém todos os dados de cada edição de um evento. São eles:
+ *	codEv: um id único que identifica cada evento.
+ *	numEd: um id único que identifica cada edição de um evento.
+ *	descriçaoEd: Um texto que descreve um evento. Essa descrição é opcional.
+ *	dataInicioEd: data que simboliza o inicio da edição do evento.
+ *	dataFimEd: data que simboliza o fim da edição do evento.
+ *	localEd: endereço de onde será aquela edição do evento.
+ *	taxaEd: taxa para participação no evento.
+ *	saldoFinanceiroEd: quantia que representa o patrocinio total recebido para
+ *		a ediçào, desconsiderando-se auxílios e despesas.
+ *	qtdArtigosApresentadosEv: quantidade total de artigos apresentados
+ *		em uma edição do evento.
+ */
 CREATE TABLE edicao(
-	codEv number(15),
-	numEd number(15),
+	codEv number(15),				-- Chave Primária / Chave Estrangeira
+	numEd number(15),				-- Chave Primária
 	descricaoEd varchar2(1024),
-	dataInicioEd DATE NOT NULL,
-	dataFimEd DATE NOT NULL,
+	dataInicioEd DATE NOT NULL,		-- Máscara: DD/MM/AAAA
+	dataFimEd DATE NOT NULL,		-- Máscara: DD/MM/AAAAs
 	localEd varchar2(200) NOT NULL,
 	taxaEd number(4,2) NOT NULL,
-	saldoFinanceiroEd number(10,2) NOT NULL,
-	qtdArtigosApresentadosEv number(3) NOT NULL,
+	saldoFinanceiroEd number(10,2) NOT NULL,	-- Atributo Derivado: armazena total de patrocinio - (despesas e auxilios)
+	qtdArtigosApresentadosEd number(3) NOT NULL,-- Atributo Derivado: armazena total de artigos daquela edição
 	CONSTRAINT PK_EDICAO primary key(codEv, numEd),
 	CONSTRAINT FK_EDICAO foreign key(codEv) references evento(codEv) ON DELETE CASCADE
 );
 /
 -- COMANDO DE CRIAÇÃO DA TABELA PESSOA:
+/*
+ *	Esta tabela contém todos os dados pessoais de participantes, organizadores e
+ *	autores de algum dos eventos. São eles:
+ *	idPe: um id único que identifica cada pessoa. Como o sistema é internacional
+ *		não podemos adotar um documento como RG ou CPF. Além disso os numeros de
+ *		passaporte mudam em cada troca de passarpote. Portanto, adotaremos uma
+ *		sequência do sistema como id.
+ *	nomePe: nome de cada pessoa.
+ *	emailPe: e-mail de cada pessoa. Deve ser único
+ *	instituiçãoPe: instituição da qual a pessoa faz parte. Pode ser nula  caso
+ *		a pessoa não faça parte de alguma instituição.
+ *	telefonePe: telefones de pessoas, tem 20 digitos para armazenas telefones
+ *		internacionais. Não é obrigatório visto que o telefone das pessoas pode
+ *		nem funcionar em outro país.
+ *	nacionalidadePe: Nacionalidade da pessoa. É importante não ser nulo pois
+ *		eventos normalmente precisam emitir cartas para ajudar as pessoas a
+ *		tirarem seus vistos.
+ *	endenrecoPe: endereço de uma pessoa. Náo é obrigatório aos participantes.
+ *	tipoOrganizador: flag que assume valores binários 0 ou 1 e indica se a
+ *		a pessoa é um organizador(1) ou náo (0).
+ *	tipoParticipante: flag que assume valores binários 0 ou 1 e indica se a
+ *		a pessoa é um participante(1) ou náo (0).
+ *	tipoAutor: flag que assume valores binários 0 ou 1 e indica se a pessoa é
+ *		um autor(1) ou não(0).
+ */
 CREATE TABLE pessoa(
-	idPe number(15),
+	idPe number(15),						-- Chave Primária
 	nomePe varchar2(60) NOT NULL,
-	emailPe varchar2(60),
+	emailPe varchar2(60),					-- Unique
 	instituicaoPe varchar2(40),
 	telefonePe varchar2(20),
 	nacionalidadePe varchar2(20) NOT NULL,
-	enderecoPe varchar2(200),
-	tipoOrganizador number(1) NOT NULL,
-	tipoParticipante number(1) NOT NULL,
-	tipoAutor number(1) NOT NULL,
+	enderecoPe varchar2(200),				-- Nao obrigatório
+	tipoOrganizador number(1) NOT NULL,		-- (0-Não, 1-Sim)
+	tipoParticipante number(1) NOT NULL,	-- (0-Não, 1-Sim)
+	tipoAutor number(1) NOT NULL,			-- (0-Não, 1-Sim)
 	CONSTRAINT PK_PESSOA primary key(idPe),
 	CONSTRAINT UN_PESSOA unique(emailPe),
 	CONSTRAINT CHECK_PESSOA_ORG CHECK(tipoOrganizador IN (0,1)),
@@ -77,12 +125,22 @@ CREATE TABLE pessoa(
 );
 /
 -- COMANDO DE CRIAÇÃO DA TABELA INSCRITO:
+/*
+ *	Esta tabela contém todos os dados de um inscrito em uma edição de um evento.
+ *		São eles:
+ *	codEv: um id único que identifica cada evento.
+ *	numEd: um id único que identifica cada edição de um evento.
+ *	idPart: ID do participante.
+ *	dataInc: data em que foi realizada a insrição.
+ *	tipoApresentador: flag que assume valores binários 0 ou 1 e indica se o
+ *	inscrito é um apresentador(1) ou não(0).
+ */
 CREATE TABLE inscrito (
-	codEv number(15),
-	numEd number(15),
-	idPart number(15),
-	dataInsc DATE NOT NULL,
-	tipoApresentador number(1) NOT NULL,
+	codEv number(15),			-- Chave Primaria / Chave Estrangeira
+	numEd number(15),			-- Chave Primaria / Chave Estrangeira
+	idPart number(15),			-- Chave Primaria / Chave Estrangeira
+	dataInsc DATE NOT NULL,		-- Máscara: DD/MM/AAAA
+	tipoApresentador number(1) NOT NULL,	-- (0-Náo, 1-Sim)
 	CONSTRAINT PK_INSCRITO primary key(codEv, numEd, idPart),
 	CONSTRAINT FK_INCRITO_COD foreign key(codEv, numEd) references edicao(codEv, numEd) ON DELETE CASCADE,
 	CONSTRAINT FK_INCRITO_PES foreign key(idPart) references pessoa(idPe) ON DELETE CASCADE,
@@ -90,22 +148,38 @@ CREATE TABLE inscrito (
 );
 /
 -- COMANDO DE CRIAÇÃO DA TABELA ARTIGO:
+/*
+ *	Esta tabela contém todos os dados de um artigo apresentado em uma edição de
+ *	um evento. São eles:
+ *	idArt: ISSN do artigo cientifico apresentado.
+ *	tituloArt: título do artigo apresentado.
+ *	dataApresArt: data da apresentação do artigo.
+ *	hora ApresArt: horário da apresentação do artigo.
+ *	codEv: um id único que identifica cada evento.
+ *	numEd: um id único que identifica cada edição de um evento.
+ *	idApr: ID do apresentador do artigo.
+ */
 CREATE TABLE artigo(
-	idArt number(15),
+	idArt number(15),				-- Chave Primaria
 	tituloArt varchar2(100),
-	dataApresArt DATE NOT NULL,
-	horaApresArt TIMESTAMP NOT NULL,
-	codEv number(15),
-	numEd number(15),
-	idApr number(15),
+	dataApresArt DATE NOT NULL,		-- Máscara: DD/MM/AAAA
+	horaApresArt TIMESTAMP NOT NULL,-- Máscara: HH:MM:SS
+	codEv number(15),				-- Chave Estrangeira
+	numEd number(15),				-- Chave Estrangeira
+	idApr number(15),				-- Chave Estrangeira
 	CONSTRAINT PK_ARTIGO primary key(idArt),
 	CONSTRAINT FK_ARTIGO foreign key(codEv, numEd, idApr) references inscrito(codEv, numEd, idPart) ON DELETE CASCADE
 );
 /
 -- COMANDO DE CRIAÇÃO DA TABELA ESCREVE:
+/*
+ *	Esta tabela contém as relações entre artigos e todos os seus autores. São eles:
+ *	idAut: Id do escritor do artigo.
+ *	idArt: ISSN do artigo cientifico.
+ */
 CREATE TABLE escreve(
-	idAut number(15),
-	idArt number(15),
+	idAut number(15),		-- Chave Primaria / Chave Estrangeira
+	idArt number(15),		-- Chave Primaria / Chave Estrangeira
 	CONSTRAINT PK_ESCREVE primary key(idAut, idArt),
 	CONSTRAINT FK_ESCREVE_PE foreign key(idAut) references pessoa(idPe) ON DELETE CASCADE,
 	CONSTRAINT FK_ESCREVE_ART foreign key(idArt) references artigo(idArt) ON DELETE CASCADE
