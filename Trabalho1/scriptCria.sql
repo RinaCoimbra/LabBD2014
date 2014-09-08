@@ -58,18 +58,20 @@ CREATE TABLE evento(
 /
 -- COMANDO DE CRIAÇÃO DA TABELA EDICAO:
 /*
- *	Esta tabela contém todos os dados de cada edição de um evento. São eles:
- *	codEv: um id único que identifica cada evento.
- *	numEd: um id único que identifica cada edição de um evento.
+ *	Esta tabela contém todos os dados de cada edição de um evento.
+ *	A chave primária é composta por codEv e numEd.
+ *	codEv: um id único que identifica cada evento. É a chave estrangeira que
+ *		referencia a tabela de evento.
+ *	numEd: um id único que identifica cada edição de um evento. 
  *	descriçaoEd: Um texto que descreve um evento. Essa descrição é opcional.
  *	dataInicioEd: data que simboliza o inicio da edição do evento.
  *	dataFimEd: data que simboliza o fim da edição do evento.
  *	localEd: endereço de onde será aquela edição do evento.
  *	taxaEd: taxa para participação no evento.
- *	saldoFinanceiroEd: quantia que representa o patrocinio total recebido para
- *		a ediçào, desconsiderando-se auxílios e despesas.
- *	qtdArtigosApresentadosEv: quantidade total de artigos apresentados
- *		em uma edição do evento.
+ *	saldoFinanceiroEd: É um atributo derivado que representa a quantia total de
+ *		o patrocinio recebido para a ediçào, descontando-se auxílios e despesas.
+ *	qtdArtigosApresentadosEv: atributo derivado que armazena a quantidade total
+ *	de artigos apresentados em uma edição do evento.
  */
 CREATE TABLE edicao(
 	codEv number(15),				-- Chave Primária / Chave Estrangeira
@@ -78,9 +80,9 @@ CREATE TABLE edicao(
 	dataInicioEd DATE NOT NULL,		-- Máscara: DD/MM/AAAA
 	dataFimEd DATE NOT NULL,		-- Máscara: DD/MM/AAAAs
 	localEd varchar2(200) NOT NULL,
-	taxaEd number(4,2) NOT NULL,
-	saldoFinanceiroEd number(10,2) NOT NULL,	-- Atributo Derivado: armazena total de patrocinio - (despesas e auxilios)
-	qtdArtigosApresentadosEd number(3) NOT NULL,-- Atributo Derivado: armazena total de artigos daquela edição
+	taxaEd number(4,2) NOT NULL,	-- Formato: XXXX.XX
+	saldoFinanceiroEd number(10,2) NOT NULL,	-- Formato: XXXXXXXXXX.XX - Atributo Derivado: armazena total de patrocinio - (despesas e auxilios)
+	qtdArtigosApresentadosEd number(3) NOT NULL,-- Formato: XXX - Atributo Derivado: armazena total de artigos daquela edição
 	CONSTRAINT PK_EDICAO primary key(codEv, numEd),
 	CONSTRAINT FK_EDICAO foreign key(codEv) references evento(codEv) ON DELETE CASCADE
 );
@@ -92,7 +94,7 @@ CREATE TABLE edicao(
  *	idPe: um id único que identifica cada pessoa. Como o sistema é internacional
  *		não podemos adotar um documento como RG ou CPF. Além disso os numeros de
  *		passaporte mudam em cada troca de passarpote. Portanto, adotaremos uma
- *		sequência do sistema como id.
+ *		sequência do sistema como id. É a chave primária da tabela pessoa.
  *	nomePe: nome de cada pessoa.
  *	emailPe: e-mail de cada pessoa. Deve ser único
  *	instituiçãoPe: instituição da qual a pessoa faz parte. Pode ser nula  caso
@@ -133,11 +135,12 @@ CREATE TABLE pessoa(
 -- COMANDO DE CRIAÇÃO DA TABELA INSCRITO:
 /*
  *	Esta tabela contém todos os dados de um inscrito em uma edição de um evento.
- *		São eles:
+ *	A chave primária é composta de: codEv, numEd e idPart.
+ *	codEv e numEd são uma chave estrangeira que referencia a tabela edição.
  *	codEv: um id único que identifica cada evento.
  *	numEd: um id único que identifica cada edição de um evento.
- *	idPart: ID do participante.
- *	dataInc: data em que foi realizada a insrição.
+ *	idPart: ID do participante. Chave estrangeira que referencia a tabela pessoa.
+ *	dataInc: data em que foi realizada a insrição. Não pode ser nula.
  *	tipoApresentador: flag que assume valores binários 0 ou 1 e indica se o
  *	inscrito é um apresentador(1) ou não(0).
  */
@@ -158,17 +161,19 @@ CREATE TABLE inscrito (
 /*
  *	Esta tabela contém todos os dados de um artigo apresentado em uma edição de
  *	um evento. São eles:
- *	idArt: ISSN do artigo cientifico apresentado.
+ *	idArt: Id do artigo cientifico apresentado. É a chave primária.
  *	tituloArt: título do artigo apresentado.
  *	dataApresArt: data da apresentação do artigo.
  *	hora ApresArt: horário da apresentação do artigo.
+ *	codEv, numEd e idApr são chaves estrangeiras que relacionam o artigo a uma
+ *		pessoa inscrita em um evento.
  *	codEv: um id único que identifica cada evento.
  *	numEd: um id único que identifica cada edição de um evento.
  *	idApr: ID do apresentador do artigo.
  */
 CREATE TABLE artigo(
 	idArt number(15),				-- Chave Primaria
-	tituloArt varchar2(100),
+	tituloArt varchar2(100) NOT NULL,
 	dataApresArt DATE NOT NULL,		-- Máscara: DD/MM/AAAA
 	horaApresArt TIMESTAMP NOT NULL,-- Máscara: HH:MM:SS
 	codEv number(15),				-- Chave Estrangeira
@@ -181,9 +186,12 @@ CREATE TABLE artigo(
 /
 -- COMANDO DE CRIAÇÃO DA TABELA ESCREVE:
 /*
- *	Esta tabela contém as relações entre artigos e todos os seus autores. São eles:
- *	idAut: Id do escritor do artigo.
- *	idArt: ISSN do artigo cientifico.
+ *	Esta tabela contém as relações entre artigos e todos os seus autores.
+ *	Sua chave primária é composta por idAut e idArt. Simboliza uma relação de N:M.
+ *		ou seja, cada um dos autores podem escrever muitos artigos e cada artigo
+ *		pode ter muitos autores.
+ *	idAut: Id do escritor do artigo. Chave estrangeira que referencia tabela pessoa.
+ *	idArt: Id do artigo cientifico. Chave estrangeira que referencia tabela artigo.
  */
 CREATE TABLE escreve(
 	idAut number(15),		-- Chave Primaria / Chave Estrangeira
