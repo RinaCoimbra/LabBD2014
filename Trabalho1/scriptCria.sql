@@ -145,10 +145,10 @@ CREATE TABLE pessoa(
  *	inscrito é um apresentador(1) ou não(0).
  */
 CREATE TABLE inscrito (
-	codEv number(15),			-- Chave Primaria / Chave Estrangeira
-	numEd number(15),			-- Chave Primaria / Chave Estrangeira
-	idPart number(15),			-- Chave Primaria / Chave Estrangeira
-	dataInsc DATE NOT NULL,		-- Máscara: DD/MM/AAAA
+	codEv number(15),						-- Chave Primaria / Chave Estrangeira
+	numEd number(15),						-- Chave Primaria / Chave Estrangeira
+	idPart number(15),						-- Chave Primaria / Chave Estrangeira
+	dataInsc DATE NOT NULL,					-- Máscara: DD/MM/AAAA
 	tipoApresentador number(1) NOT NULL,	-- (0-Náo, 1-Sim)
 	CONSTRAINT PK_INSCRITO primary key(codEv, numEd, idPart),
 	CONSTRAINT FK_INCRITO_COD foreign key(codEv, numEd) references edicao(codEv, numEd) ON DELETE CASCADE,
