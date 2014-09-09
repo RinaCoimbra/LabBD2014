@@ -212,9 +212,9 @@ CREATE TABLE escreve(
  *		essa pessoa deve ter um cargo. Por esse motivo, o campo não pode ser null.
  */
 CREATE TABLE organiza(
-	idOrg number(15),
-	codEv number(15),
-	numEd number(15),
+	idOrg number(15),						-- chave primária / chave estrangeira
+	codEv number(15),						-- chave primária / chave estrangeira
+	numEd number(15),						-- chave primária / chave estrangeira
 	cargoOrg varchar2(60) NOT NULL,
 	CONSTRAINT PK_ORGANIZA primary key(idOrg, codEv, numEd), -- idOrg, codEv e numEd juntos compõem a chave primária
 	CONSTRAINT FK_ORGANIZA_PE foreign key(idOrg) references pessoa(idPe) ON DELETE CASCADE,
@@ -252,12 +252,12 @@ CREATE TABLE patrocinador(
  * dataPat indica qual foi a data do patrocínio. Como é uma informação importante, não pode ser null
  */
 CREATE TABLE patrocinio(
-	cnpjPat number(14),						
-	codEv number(15),						
-	numEd number(15),						
-	valorPat number(10,2) NOT NULL,			-- XXXXXXXXXX.XX
-	saldoPat number(10,2) NOT NULL,			-- XXXXXXXXXX.XX
-	dataPat DATE NOT NULL,					-- DD/MM/YYYY
+	cnpjPat number(14),						-- chave primária / chave estrangeira
+	codEv number(15),						-- chave primária / chave estrangeira
+	numEd number(15),						-- chave primária / chave estrangeira
+	valorPat number(10,2) NOT NULL,			-- Formato: XXXXXXXXXX.XX
+	saldoPat number(10,2) NOT NULL,			-- Formato: XXXXXXXXXX.XX
+	dataPat DATE NOT NULL,					-- Máscara: DD/MM/YYYY
 	CONSTRAINT PK_PATROCINIO primary key(cnpjPat, codEv, numEd), -- cnpjPat, codEv e numEd juntos compõem a chave primária
 	CONSTRAINT FK_PATROCINIO_PR foreign key(cnpjPat) references patrocinador(cnpjPat) ON DELETE CASCADE,
 	CONSTRAINT FK_PATROCINIO_ED foreign key(codEv, numEd) references edicao(codEv, numEd) ON DELETE CASCADE
@@ -278,14 +278,14 @@ CREATE TABLE patrocinio(
  * descricaoDesp indica qual é a descrição da despesa. Também não pode ser null por ser importante. 
  */
 CREATE TABLE despesa(
-	codDesp number(15),						
-	codEv number(15),						
-	numEd number(15),						
-	cnpjPat number(14),						
-	codEvPat number(15),					
-	numEdPat number(15),					
-	dataDesp DATE NOT NULL,					-- DD/MM/YYYY
-	valorDesp number(10,2) NOT NULL,		-- XXXXXXXXXX.XX
+	codDesp number(15),						-- chave primária
+	codEv number(15),						-- chave primária / chave estrangeira
+	numEd number(15),						-- chave primária / chave estrangeira
+	cnpjPat number(14),						-- chave estrangeira
+	codEvPat number(15),					-- chave estrangeira
+	numEdPat number(15),					-- chave estrangeira
+	dataDesp DATE NOT NULL,					-- Máscara: DD/MM/YYYY
+	valorDesp number(10,2) NOT NULL,		-- Formato: XXXXXXXXXX.XX
 	descricaoDesp varchar2(1024) NOT NULL,
 	CONSTRAINT PK_DESPESA primary key(codDesp, codEv, numEd), -- codDesp, codEv e numEd juntos compõem a chave primária
 	CONSTRAINT FK_DESPESA_ED foreign key(codEv, numEd) references edicao(codEv, numEd) ON DELETE CASCADE,
@@ -308,15 +308,15 @@ CREATE TABLE despesa(
  *		isso ele deve ser chave primária.
  */
 CREATE TABLE auxilio(
-	cnpjPat number(14),						
-	codEvPat number(15),					
-	numEdPat number(15),					
-	codEvApr number(15),					
-	numEdApr number(15),					
-	idApr number(15),						
-	valorAux number(10,2) NOT NULL,			-- XXXXXXXXXX.XX
-	dataAux DATE NOT NULL,					-- DD/MM/YYYY
-	tipoAux varchar2(11),					--'hospedagem', 'alimentação' ou 'transporte'
+	cnpjPat number(14),						-- chave estrangeira
+	codEvPat number(15),					-- chave estrangeira
+	numEdPat number(15),					-- chave estrangeira
+	codEvApr number(15),					-- chave primária / chave estrangeira
+	numEdApr number(15),					-- chave primária / chave estrangeira
+	idApr number(15),						-- chave primária / chave estrangeira
+	valorAux number(10,2) NOT NULL,			-- Formato: XXXXXXXXXX.XX
+	dataAux DATE NOT NULL,					-- Máscara: DD/MM/YYYY
+	tipoAux varchar2(11),					-- chave primária / tipos: 'hospedagem', 'alimentação' ou 'transporte'
 	CONSTRAINT PK_AUXILIO primary key(codEvApr, numEdApr, idApr, tipoAux), -- codEvApr, numEdApr, idApr e tipoAux juntos compõem a chave primária
 	CONSTRAINT FK_AUXILIO_INS foreign key(codEvApr, numEdApr, idApr) references inscrito(codEv, numEd, idPart) ON DELETE CASCADE, 
 	CONSTRAINT FK_AUXILIO_PAT foreign key(cnpjPat, codEvPat, numEdPat) references patrocinio(cnpjPat, codEv, numEd) ON DELETE CASCADE,
