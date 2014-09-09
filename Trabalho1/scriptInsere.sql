@@ -46,149 +46,149 @@ INSERT INTO pessoa(idPe, nomePe, emailPe, instituicaoPe, telefonePe, nacionalida
 /
 -- Inserção de inscritos
 --DEXA 2012
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 1, TO_DATE('15/07/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 2, TO_DATE('15/07/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 3, TO_DATE('15/07/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 4, TO_DATE('18/07/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 5, TO_DATE('19/07/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 6, TO_DATE('20/07/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 7, TO_DATE('20/07/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('20/07/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('20/07/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('24/07/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('26/07/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('30/07/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('30/07/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('31/07/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('31/07/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('02/08/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('02/08/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('02/08/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('02/08/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('02/08/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('04/08/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('04/08/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('05/08/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('05/08/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('06/08/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('08/08/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('10/08/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('15/08/2012','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('18/08/2012','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 1, 8, TO_DATE('18/08/2012','DD/MM/YYYY'), 0);
 --DEXA 2013
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('02/07/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('03/07/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('03/07/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('08/07/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('10/07/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('10/07/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('10/07/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('10/07/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('12/07/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('12/07/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('14/07/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('16/07/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('19/07/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('23/07/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('23/07/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('28/07/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('28/07/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('02/08/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('02/08/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('02/08/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('03/08/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('04/08/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('07/08/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('07/08/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('08/08/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('08/08/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('09/08/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('13/08/2013','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('14/08/2013','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 2, 8, TO_DATE('16/08/2013','DD/MM/YYYY'), 0);
 --DEXA 2014
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
-INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values ();
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('19/07/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('22/07/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('22/07/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('26/07/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('27/07/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('29/07/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('29/07/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('30/07/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('02/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('02/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('04/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('04/08/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('06/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('06/08/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('06/08/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('06/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('08/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('09/08/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('12/08/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('14/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('16/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('16/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('20/08/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('22/08/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('22/08/2014','DD/MM/YYYY'), 1);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('24/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('24/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('24/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('26/08/2014','DD/MM/YYYY'), 0);
+INSERT INTO inscrito(codEv, numEd, idPart, dataInsc, tipoApresentador) values (1, 3, 8, TO_DATE('26/08/2014','DD/MM/YYYY'), 0);
 /
 /
 -- Inserção de artigos
 --DEXA 2012
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'A Comparison of Top-k Temporal Keyword Querying over Versioned Text Collections', TO_DATE('05/09/2012','DD/MM/YYYY'), TO_DATE('05/09/2012 08:00','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Wenyu Huo, Vassilis Tsotras
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'A Framework for Conditioning Uncertain Relational Data', TO_DATE('05/09/2012','DD/MM/YYYY'), TO_DATE('05/09/2012 08:30','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Ruiming Tang, Reynold Cheng, Huayu Wu, Stephane Bressan
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'A Hybrid Approach for General XML Query Processing', TO_DATE('05/09/2012','DD/MM/YYYY'), TO_DATE('05/09/2012 09:00','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Huayu Wu, Ruiming Tang, Tok Wang Ling, Yong Zeng, Stephane Bressan
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Combining information and activities in business processes', TO_DATE('05/09/2012','DD/MM/YYYY'), TO_DATE('05/09/2012 09:30','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Giorgio Bruno
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'A New Approach for Date Sharing and Recommendation in Social Web', TO_DATE('05/09/2012','DD/MM/YYYY'), TO_DATE('05/09/2012 10:10','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Dawen Jia, Cheng Zeng, Wenhui Nie, Zhihao Li, Zhiyong Peng
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'A Write Efficient PCM-Aware Sort', TO_DATE('05/09/2012','DD/MM/YYYY'), TO_DATE('05/09/2012 10:30','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Venkata Vamsikrishna Meduri, Zhan Su, Kian-Lee Tan
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Cause Analysis of New Incidents by Using Failure Knowledge Database', TO_DATE('05/09/2012','DD/MM/YYYY'), TO_DATE('05/09/2012 11:00','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Yuki Awano, Qiang Ma, Masatoshi Yoshikawa
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Continuously Mining Sliding Window Trend Clusters in a Sensor Network', TO_DATE('05/09/2012','DD/MM/YYYY'), TO_DATE('05/09/2012 11:30','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Appice Annalisa, Malerba Donato, Ciampi Anna,
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Detecting Privacy Violations in Multiple views publishing', TO_DATE('05/09/2012','DD/MM/YYYY'), TO_DATE('05/09/2012 12:00','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Deming Dou, Stéphane Coulondre
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Indexing Metric Spaces with Nested Forests of Topological Balls and Hyperplanes', TO_DATE('06/09/2012','DD/MM/YYYY'), TO_DATE('06/09/2012 08:00','DD/MM/YYYY HH24:MI'), 1, 1, 1);
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Navigating in Complex Business Processes', TO_DATE('06/09/2012','DD/MM/YYYY'), TO_DATE('06/09/2012 08:30','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Markus Hipp, Bela Mutschler, Manfred Reichert
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Querying Transaction-time Databases under Branched Schema Evolution', TO_DATE('06/09/2012','DD/MM/YYYY'), TO_DATE('06/09/2012 09:00','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Wenyu Huo, Vassilis Tsotras
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'SCOOTER: A Compact and Scalable Dynamic Labeling Scheme for XML Updates', TO_DATE('06/09/2012','DD/MM/YYYY'), TO_DATE('06/09/2012 09:30','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Martin O'Connor, Mark Roantree
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'The Effective Relevance Link between a Document and a Query', TO_DATE('06/09/2012','DD/MM/YYYY'), TO_DATE('06/09/2012 10:00','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Karam Abdulahhad, Jean-Pierre Chevallet, Catherine Berrut
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Towards Quantitative Constraints Ranking In Data Clustering', TO_DATE('06/09/2012','DD/MM/YYYY'), TO_DATE('06/09/2012 10:30','DD/MM/YYYY HH24:MI'), 1, 1, 1); --Eya Ben Ahmed, Ahlem Nabli, Faiez Gargouri
 --DEXA 2013
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Coordination Issues in Artifact-centric Business Process Models', TO_DATE('29/08/2013','DD/MM/YYYY'), TO_DATE('29/08/2013 08:00','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Giorgio Bruno
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Discovering Semantics from Data-Centric XML', TO_DATE('29/08/2013','DD/MM/YYYY'), TO_DATE('29/08/2013 08:30','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Luochen Li, Thuy Ngoc Le, Huayu Wu, Tok Wang Ling, Stephane Bressan
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Evaluating Spatial Skyline Queries on Changing Data', TO_DATE('29/08/2013','DD/MM/YYYY'), TO_DATE('29/08/2013 09:00','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Fabiola Di Bartolo, Marlene Goncalves
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Force-directed Layout Community Detection', TO_DATE('29/08/2013','DD/MM/YYYY'), TO_DATE('29/08/2013 09:30','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Yi Song, Stephane Bressan
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Generic Top-k Query Processing with Breadth-first Strategies', TO_DATE('29/08/2013','DD/MM/YYYY'), TO_DATE('29/08/2013 10:00','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Mehdi Badr, Dan Vodislav
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'On the Composition of Digital Licenses in Collaborative Environments', TO_DATE('29/08/2013','DD/MM/YYYY'), TO_DATE('29/08/2013 10:30','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Marco Mesiti, Paolo Perlasca, Stefano Valtolina
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Permutation-based Pruning For Approximate K-NN Search', TO_DATE('29/08/2013','DD/MM/YYYY'), TO_DATE('29/08/2013 11:00','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Hisham Mohamed, Stéphane Marchand-Maillet
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Similarities in Spaces of Features and Concepts: Semantic Approach', TO_DATE('29/08/2013','DD/MM/YYYY'), TO_DATE('29/08/2013 11:30','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Wladyslaw Homenda, Agnieszka Jastrzebska
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Taming Elephants, or How to Embed Parallelism into PostgreSQL', TO_DATE('29/08/2013','DD/MM/YYYY'), TO_DATE('29/08/2013 12:00','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Constantin S. Pan, Mikhail L. Zymbler
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'The Price Is Right', TO_DATE('30/08/2013','DD/MM/YYYY'), TO_DATE('30/08/2013 08:00','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Ruiming Tang, Huayu Wu, Zhifeng Bao, Stephane Bressan, Patrick Valduriez
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'UMAP: A Universal Layer for Schema Mapping Languages', TO_DATE('30/08/2013','DD/MM/YYYY'), TO_DATE('30/08/2013 08:30','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Florin Chertes, Ingo Feinerer
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'A Linguistic Graph-based Approach for Web News Sentence Searching', TO_DATE('30/08/2013','DD/MM/YYYY'), TO_DATE('30/08/2013 09:00','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Kim Schouten, Flavius Frasincar
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Accelerating Metric Space Similarity Joins with Multi-core and Many-core Processors ', TO_DATE('30/08/2013','DD/MM/YYYY'), TO_DATE('30/08/2013 09:30','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Shichao Jin, Okhee Kim
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Analysis of Clinical Documents to Enable Semantic Interoperability', TO_DATE('30/08/2013','DD/MM/YYYY'), TO_DATE('30/08/2013 10:00','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Barbara Franz, Andreas Schuler, Emmanuel Helm
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Fast Community Detection', TO_DATE('30/08/2013','DD/MM/YYYY'), TO_DATE('30/08/2013 10:30','DD/MM/YYYY HH24:MI'), 1, 2, 1); --Yi Song, Stephane Bressa
 --DEXA 2014
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
-INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values ();
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'The entity-flow perspective in business process models', TO_DATE('02/09/2014','DD/MM/YYYY'), TO_DATE('02/09/2014 08:00','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Giorgio Bruno
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'A Memory-Efficient Tree Edit Distance Algorithm', TO_DATE('02/09/2014','DD/MM/YYYY'), TO_DATE('02/09/2014 08:30','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Mateusz Pawlik, Nikolaus Augsten
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Clustering Evolving Data Stream with Affinity Propagation Algorithm', TO_DATE('02/09/2014','DD/MM/YYYY'), TO_DATE('02/09/2014 09:00','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Walid Atwa, Li Kan
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'DatalogBlocks: Relational Logic Integration Patterns', TO_DATE('02/09/2014','DD/MM/YYYY'), TO_DATE('02/09/2014 09:30','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Daniel Ritter, Jan Bross
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Discovering non-constant Conditional Functional Dependencies with built-in predicates', TO_DATE('02/09/2014','DD/MM/YYYY'), TO_DATE('02/09/2014 10:00','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Antonella Zanzi, Alberto Trombetta
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Effective Skyline Query Execution in Wireless Broadcast Environments', TO_DATE('02/09/2014','DD/MM/YYYY'), TO_DATE('02/09/2014 10:30','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Chuan-Ming Liu, Kai-An Yu
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Location-aware Tag Recommendations for Flickr', TO_DATE('02/09/2014','DD/MM/YYYY'), TO_DATE('02/09/2014 11:00','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Ioanna Miliou, Akrivi Vlachou
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Nazca: A Context-based Matching Method for Searching Heterogeneous Structures', TO_DATE('02/09/2014','DD/MM/YYYY'), TO_DATE('02/09/2014 11:30','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Karine B. Oliveira, Carina F. Dorneles
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Named Entity Oriented Related News Ranking', TO_DATE('03/09/2014','DD/MM/YYYY'), TO_DATE('03/09/2014 08:00','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Keisuke Kiritoshi, Qiang Ma
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Rank Aggregation of Candidate Sets for Efficient Similarity Search ', TO_DATE('03/09/2014','DD/MM/YYYY'), TO_DATE('03/09/2014 08:30','DD/MM/YYYY HH24:MI'), 1, 3, 1); --David Novak, Pavel Zezula
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Searching for Local Twitter Users by Extracting Regional Terms', TO_DATE('03/09/2014','DD/MM/YYYY'), TO_DATE('03/09/2014 09:00','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Takuji Tahara, Qiang Ma
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Refinement Correction Strategy for Invalid XML Documents and Regular Tree Grammars', TO_DATE('03/09/2014','DD/MM/YYYY'), TO_DATE('03/09/2014 09:30','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Martin Svoboda, Irena Holubova
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Towards Practical Anomaly-based Intrusion Detection by Outlier Mining on TCP Packets', TO_DATE('03/09/2014','DD/MM/YYYY'), TO_DATE('03/09/2014 10:00','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Prajowal Manandhar, Zeyar Aung
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Translatable Updates of Selection Views under Constant Complement', TO_DATE('03/09/2014','DD/MM/YYYY'), TO_DATE('03/09/2014 10:30','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Enrico Franconi, Paolo Guagliardo
+INSERT INTO artigo(idArt, tituloArt, dataApresArt, horaApresArt, codEv, numEd, idApr) values (SEQ_idArt.NEXTVAL, 'Web Materialization Formulation: Modelling feasible solution ', TO_DATE('03/09/2014','DD/MM/YYYY'), TO_DATE('03/09/2014 11:00','DD/MM/YYYY HH24:MI'), 1, 3, 1); --Srdan Zagorac, Russel Pears
 /
 /
 -- Inserção de escritores
@@ -212,20 +212,20 @@ INSERT INTO escreve(idAut, idArt) values ();
 /
 -- Inserção de organizadores
 --DEXA 2012
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 1, 'membro do comitê diretivo');
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 1, 'membro da comissão financeira');
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 1, 'membro da comissão de divulgação');
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 1, 'membro da secretaria executiva');
 --DEXA 2013
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 2, 'membro da comissão financeira');
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 2, 'membro da comissão de infra-estrutura');
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 2, 'membro da comissão de captação de patrocinios');
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 2, 'membro do comitê diretivo');
 --DEXA 2014
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
-INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values ();
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 3, 'membro da comissão de divulgação');
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 3, 'membro da comissão cientifica');
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 3, 'membro da comissão de infra-estrutura');
+INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 3, 'membro da secretaria executiva');
 /
 /
 -- Inserção de patrocinadores
