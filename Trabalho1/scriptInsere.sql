@@ -229,10 +229,10 @@ INSERT INTO organiza(idOrg, codEv, numEd, cargoOrg) values (1, 1, 3, 'membro da 
 /
 /
 -- Inserção de patrocinadores
-INSERT INTO patrocinador(cnpjPat,razaoSocialPat, telefonePat, enderecoPat) values ();
-INSERT INTO patrocinador(cnpjPat,razaoSocialPat, telefonePat, enderecoPat) values ();
-INSERT INTO patrocinador(cnpjPat,razaoSocialPat, telefonePat, enderecoPat) values ();
-INSERT INTO patrocinador(cnpjPat,razaoSocialPat, telefonePat, enderecoPat) values ();
+INSERT INTO patrocinador(cnpjPat,razaoSocialPat, telefonePat, enderecoPat) values (40.893.978/0001-44, 'FAW GmbH', '+43 7236 3343760', 'Softwarepark 35, 4232 Hagenberg im Mühlkreis, Áustria');
+INSERT INTO patrocinador(cnpjPat,razaoSocialPat, telefonePat, enderecoPat) values (24.988.076/0001-35, 'fiveIT Hagenberg', '+43 7236 3343 900', 'Softwarepark 35, 4232 Hagenberg i.M.');
+INSERT INTO patrocinador(cnpjPat,razaoSocialPat, telefonePat, enderecoPat) values (89.529.163/0001-70, 'GRID applications GmbH', '+43 1 516 333 876', 'Parkring 10, 1010 Wien, Österreich');
+INSERT INTO patrocinador(cnpjPat,razaoSocialPat, telefonePat, enderecoPat) values (15.373.585/0001-62, 'BIA Business Intelligence Accelerator GmbH', '+43 7236 26290', 'Softwarepark 26, 4232 Hagenberg i. M., Austria');
 /
 /
 -- Inserção de patrocinios
