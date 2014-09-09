@@ -236,51 +236,52 @@ INSERT INTO patrocinador(cnpjPat,razaoSocialPat, telefonePat, enderecoPat) value
 /
 /
 -- Inserção de patrocinios
+-- saldoPat: derivado - não coloquei
 --DEXA 2012
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (40.893.978/0001-44, 1, 1, 121500.00, , TO_DATE('03/04/2012','DD/MM/YYYY'));
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (24.988.076/0001-35, 1, 1, 115700.00, , TO_DATE('15/04/2012','DD/MM/YYYY'));
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (89.529.163/0001-70, 1, 1, 18900.00, , TO_DATE('12/05/2012','DD/MM/YYYY'));
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (15.373.585/0001-62, 1, 1, 17500.00, , TO_DATE('28/05/2012','DD/MM/YYYY'));
 --DEXA 2013
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (40.893.978/0001-44, 1, 2, 105800.00, , TO_DATE('15/04/2013','DD/MM/YYYY'));
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (24.988.076/0001-35, 1, 2, 99200.00, , TO_DATE('11/05/2013','DD/MM/YYYY'));
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (89.529.163/0001-70, 1, 2, 13250.00, , TO_DATE('19/05/2013','DD/MM/YYYY'));
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (15.373.585/0001-62, 1, 2, 17500.00, , TO_DATE('24/05/2013','DD/MM/YYYY'));
 --DEXA 2014
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
-INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values ();
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (40.893.978/0001-44, 1, 3, 107400.00, , TO_DATE('10/04/2014','DD/MM/YYYY'));
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (24.988.076/0001-35, 1, 3, 103200.00, , TO_DATE('23/04/2014','DD/MM/YYYY'));
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (89.529.163/0001-70, 1, 3, 11350.00, , TO_DATE('03/05/2014','DD/MM/YYYY'));
+INSERT INTO patrocinio(cnpjPat, codEv, numEd, valorPat, saldoPat, dataPat) values (15.373.585/0001-62, 1, 3, 18000.00, , TO_DATE('19/05/2014','DD/MM/YYYY'));
 /
 /
 -- Inserção de despesas
 --DEXA 2012
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 1, 40.893.978/0001-44, 1, 1, TO_DATE('03/09/2012','DD/MM/YYYY'), 470.00, 'coffee-break');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 1, 40.893.978/0001-44, 1, 1, TO_DATE('01/09/2012','DD/MM/YYYY'), 200.00, 'decoração');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 1, 40.893.978/0001-44, 1, 1, TO_DATE('30/08/2012','DD/MM/YYYY'), 560.00, 'som');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 1, 24.988.076/0001-35, 1, 1, TO_DATE('19/07/2012','DD/MM/YYYY'), 2650.00, 'aluguel de salões');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 1, 24.988.076/0001-35, 1, 1, TO_DATE('01/09/2012','DD/MM/YYYY'), 1950.00, 'funcionários');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 1, 89.529.163/0001-70, 1, 1, TO_DATE('30/08/2012','DD/MM/YYYY'), 950.00, 'gráfica');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 1, 89.529.163/0001-70, 1, 1, TO_DATE('04/09/2012','DD/MM/YYYY'), 350.00, 'coffee-break');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 1, 15.373.585/0001-62, 1, 1, TO_DATE('30/08/2012','DD/MM/YYYY'), 975.00, 'aluguel de equipamento de informática e multimídia');
 --DEXA 2013
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 2, 40.893.978/0001-44, 1, 2, TO_DATE('24/05/2013','DD/MM/YYYY'), 2350.00, 'aluguel de salões');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 2, 40.893.978/0001-44, 1, 2, TO_DATE('25/07/2013','DD/MM/YYYY'), 1150.00, 'aluguel de equipamento de informática e multimídia');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 2, 24.988.076/0001-35, 1, 2, TO_DATE('17/07/2013','DD/MM/YYYY'), 1250.00, 'publicação do livro de resumos');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 2, 24.988.076/0001-35, 1, 2, TO_DATE('27/07/2013','DD/MM/YYYY'), 450.00, 'iluminação');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 2, 24.988.076/0001-35, 1, 2, TO_DATE('19/05/2013','DD/MM/YYYY'), 350.00, 'panfletos');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 2, 89.529.163/0001-70, 1, 2, TO_DATE('26/08/2013','DD/MM/YYYY'), 450.00, 'coffee-break');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 2, 15.373.585/0001-62, 1, 2, TO_DATE('23/07/2013','DD/MM/YYYY'), 350.00, 'brindes');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 2, 15.373.585/0001-62, 1, 2, TO_DATE('19/06/2013','DD/MM/YYYY'), 750.00, 'confecção de pastas e crachás');
 --DEXA 2014
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
-INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, daraDesp, valorDesp, descricaoDesp) values ();
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 3, 40.893.978/0001-44, 1, 3, TO_DATE('28/08/2014','DD/MM/YYYY'), 1550.00, 'funcionários');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 3, 40.893.978/0001-44, 1, 3, TO_DATE('27/05/2014','DD/MM/YYYY'), 350.00, 'aluguel de salões');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 3, 24.988.076/0001-35, 1, 3, TO_DATE('26/08/2014','DD/MM/YYYY'), 900.00, 'gráfica');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 3, 24.988.076/0001-35, 1, 3, TO_DATE('30/08/2014','DD/MM/YYYY'), 450.00, 'som');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 3, 89.529.163/0001-70, 1, 3, TO_DATE('01/09/2014','DD/MM/YYYY'), 430.00, 'coffee-break');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 3, 89.529.163/0001-70, 1, 3, TO_DATE('27/08/2014','DD/MM/YYYY'), 280.00, 'decoração');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 3, 15.373.585/0001-62, 1, 3, TO_DATE('27/08/2014','DD/MM/YYYY'), 750.00, 'seguranças');
+INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp, valorDesp, descricaoDesp) values (SEQ_codDesp.NEXTVAL, 1, 3, 15.373.585/0001-62, 1, 3, TO_DATE('26/08/2014','DD/MM/YYYY'), 350.00, 'aluguel de equipamento de informática e multimídia');
 /
 /
 -- Inserção de auxílios
