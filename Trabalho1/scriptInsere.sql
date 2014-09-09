@@ -286,37 +286,37 @@ INSERT INTO despesa(codDesp, codEv, numEd, cnpjPat, codEvPat, numEdPat, dataDesp
 /
 -- Inserção de auxílios
 --DEXA 2012
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('28/08/2012','DD/MM/YYYY'), 'hospedagem');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('26/08/2012','DD/MM/YYYY'), 'alimentação');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('25/08/2012','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('27/08/2012','DD/MM/YYYY'), 'hospedagem');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('22/08/2012','DD/MM/YYYY'), 'alimentação');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('20/08/2012','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('20/08/2012','DD/MM/YYYY'), 'hospedagem');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('23/08/2012','DD/MM/YYYY'), 'alimentação');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('24/08/2012','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 1, 1, 1, 1, 350.00, TO_DATE('24/08/2012','DD/MM/YYYY'), 'alimentação');
 --DEXA 2013
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('16/08/2013','DD/MM/YYYY'), 'alimentação');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('16/08/2013','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('17/08/2013','DD/MM/YYYY'), 'hospedagem');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('17/08/2013','DD/MM/YYYY'), 'alimentação');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('18/08/2013','DD/MM/YYYY'), 'alimentação');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('19/08/2013','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('20/08/2013','DD/MM/YYYY'), 'hospedagem');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('20/08/2013','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('20/08/2013','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 2, 1, 2, 1, 350.00, TO_DATE('21/08/2013','DD/MM/YYYY'), 'alimentação');
 --DEXA 2014
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
-INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values ();
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('20/08/2014','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('21/08/2014','DD/MM/YYYY'), 'hospedagem');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('22/08/2014','DD/MM/YYYY'), 'hospedagem');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('22/08/2014','DD/MM/YYYY'), 'alimentação');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('23/08/2014','DD/MM/YYYY'), 'alimentação');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('23/08/2014','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('24/08/2014','DD/MM/YYYY'), 'hospedagem');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('25/08/2014','DD/MM/YYYY'), 'alimentação');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('25/08/2014','DD/MM/YYYY'), 'transporte');
+INSERT INTO auxilio(cnpjPat, codEvPat, numEdPat, codEvApr, numEdApr, idApr, valorAux, dataAux, tipoAux) values (40.893.978/0001-44, 1, 3, 1, 3, 1, 350.00, TO_DATE('26/08/2014','DD/MM/YYYY'), 'hospedagem');
 /
 /
