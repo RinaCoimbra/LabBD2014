@@ -47,12 +47,12 @@ DROP SEQUENCE SEQ_codDesp;
  */
 CREATE TABLE evento(
 	codEv number(15),								-- Chave Primária
-	nomeEv varchar2(50),							-- Unique
+	nomeEv varchar2(100),							-- Unique
 	descricaoEv varchar2(1024),
 	websiteEv varchar2(60) NOT NULL,
 	totalArtigosApresentadosEv number(3) NOT NULL,	-- Atributo derivado, armazena total de artigos em todas as edições de um evento
-	CONSTRAINT PK_EVENTO primary key(codEv),
-	CONSTRAINT UN_EVENTO unique(nomeEv)
+	CONSTRAINT PK_EVENTO_1 primary key(codEv),
+	CONSTRAINT UN_EVENTO_1 unique(nomeEv)
 );
 /
 -- COMANDO DE CRIAÇÃO DA TABELA EDICAO:
